@@ -49,4 +49,19 @@ Cabin: The cabin number of the passenger.
 
 Embarked: The port of embarkation, which is a categorical feature with three unique values (C, Q, or S) representing Cherbourg, Queenstown, and Southampton, respectively.
 
+Data preprocessing steps:
+------------------------------------------------------------------------------------------------------------------------------
+
+Filling Missing Values: We filled the missing values in the "Age" feature using median values based on passenger class and sex groups. This approach accounts for the correlation between age, passenger class, and sex, leading to more accurate imputations.
+
+Filling Embarked Missing Values: As there were only two missing values in the "Embarked" feature, we made an informed decision to fill them with the mode value for upper-class female passengers (C).
+
+Filling Fare Missing Value: With only one missing value in the "Fare" feature, we employed the median value of the entire dataset to fill the missing entry.
+
+Handling Cabin and Introducing Deck: We replaced the "Cabin" feature with the newly created "Deck" feature, which contains the deck information extracted from the first letter of the original cabin values. By doing this, we retained essential information about the passenger's cabin location while reducing the high cardinality of the feature.
+
+Dropping Cabin Feature: As the "Deck" feature serves as a more meaningful and manageable representation of the cabin location, we dropped the original "Cabin" feature from the dataset.
+
+No Missing Values Left: After the above steps, there are no missing values remaining in the dataset, making it ready for further analysis and modeling.
+
 
