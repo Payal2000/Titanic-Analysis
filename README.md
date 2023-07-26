@@ -21,9 +21,9 @@ sklearn.tree.DecisionTreeClassifier: A class from scikit-learn to create decisio
 sklearn.naive_bayes.GaussianNB: A class from scikit-learn to create Gaussian Naive Bayes classifiers.
 
 sklearn.linear_model.LogisticRegression: A class from scikit-learn to create logistic regression classifiers.
-----------------------------------------------------------------------------------------------------------------
 
 The dataset contains the following columns:
+----------------------------------------------------------------------------------------------------------------
 
 PassengerId: A unique identifier for each row (passenger).
 
